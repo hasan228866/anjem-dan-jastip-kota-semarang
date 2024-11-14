@@ -1,0 +1,163 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Latar belakang */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6db3f2, #1e90ff);
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    color: #ffffff;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    animation: slideDown 1s ease-out;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .header p {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+  
+  /* Animasi slide down untuk header */
+  @keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Container utama */
+  .container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 60px 50px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin-top: 150px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Judul layanan */
+  .container h2 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  /* Deskripsi */
+  .description {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 30px;
+  }
+  
+  /* Kontainer tombol */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Tombol */
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Ikon pada tombol */
+  .button .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Efek hover untuk tombol */
+  .button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 123, 255, 0.4);
+  }
+  
+  /* Warna khusus untuk tombol */
+  .antar-jemput {
+    background-color: #007bff;
+  }
+  .antar-jemput:hover {
+    background-color: #0056b3;
+  }
+  .titip-makanan {
+    background-color: #1e90ff;
+  }
+  .titip-makanan:hover {
+    background-color: #1c86e5;
+  }
+  
+  /* Footer */
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  /* Ikon sosial media pada footer */
+  .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .icon-link {
+    font-size: 20px;
+    color: #ffffff;
+    transition: transform 0.3s;
+  }
+  .icon-link:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Animasi fade in */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsif: Jika layar lebih lebar, tombol akan berjajar */
+  @media (min-width: 600px) {
+    .button-container {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+  
