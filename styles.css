@@ -117,6 +117,12 @@
   .titip-makanan:hover {
     background-color: #1c86e5;
   }
+  .profil-driver {
+    background-color: #1e90ff;
+  }
+  .profil-driver:hover {
+    background-color: #1c86e5;
+  }
   
   /* Footer */
   .footer {
