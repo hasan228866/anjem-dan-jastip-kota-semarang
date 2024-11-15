@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #6db3f2, #1e90ff);
+    background: linear-gradient(135deg, #FF2929, #FF2929);
   }
   
   /* Header */
@@ -58,7 +58,7 @@
   /* Judul layanan */
   .container h2 {
     font-size: 24px;
-    color: #007bff;
+    color: #FF2929;
     margin-bottom: 10px;
   }
   
@@ -106,22 +106,22 @@
   
   /* Warna khusus untuk tombol */
   .antar-jemput {
-    background-color: #007bff;
+    background-color: #FF2929;
   }
   .antar-jemput:hover {
-    background-color: #0056b3;
+    background-color: #ac0000;
   }
   .titip-makanan {
-    background-color: #1e90ff;
+    background-color: #FF2929;
   }
   .titip-makanan:hover {
-    background-color: #1c86e5;
+    background-color: #ac0000;
   }
   .profil-driver {
-    background-color: #1e90ff;
+    background-color: #FF2929;
   }
   .profil-driver:hover {
-    background-color: #1c86e5;
+    background-color: #ac0000;
   }
   
   /* Footer */
